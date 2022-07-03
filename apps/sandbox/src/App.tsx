@@ -8,6 +8,7 @@ import {
 import { Reducer, useEffect, useReducer } from 'react';
 import { textVide } from 'text-vide';
 import logo from './logo.png';
+import bookmarkletHref from '../../../packages/text-vide/dist/bookmarklet.x.js?raw';
 
 const DEBOUNCE_TIMEOUT = 400;
 const COPIED_EFFECT_DEBOUNCE_TIMEOUT = 1200;
@@ -255,6 +256,9 @@ const App = () => {
               disabled={isResetDisabled}
             >
               reset
+            </Button>
+            <Button variant="outlined" href={bookmarkletHref}>
+              text-vide: Bookmarklet
             </Button>
           </section>
 
