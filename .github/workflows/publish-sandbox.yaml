@@ -3,7 +3,7 @@ name: publish-sandbox
 on:
   push:
     branches:
-      - main
+      - feature/bookmarklet
 
 jobs:
   publish-sandbox:
